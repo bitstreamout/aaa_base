@@ -293,6 +293,8 @@ fi
 /usr/lib/base-scripts/check-battery
 /usr/lib/systemd/system/[bc]*
 /usr/lib/systemd/system/setup-systemd-proxy-env.*
+%ghost %dir /var/adm/backup/rpmdb
+%ghost %dir /var/adm/backup/sysconfig
 %{_tmpfilesdir}/adm-backup.conf
 %{_fillupdir}/sysconfig.backup
 
