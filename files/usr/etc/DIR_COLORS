@@ -67,6 +67,7 @@ TERM tmux
 TERM tmux-256color
 TERM vt100
 TERM vt102
+TERM vt220
 TERM xterm
 TERM xterm-16color
 TERM xterm-256color
@@ -189,6 +190,7 @@ EXEC 01;32
 .gl 01;35
 .jpeg 01;35
 .jpg 01;35
+.jxl 01;35
 .m2v 01;35
 .m4v 01;35
 .mjpeg 01;35
