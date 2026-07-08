@@ -47,25 +47,7 @@ case "$-" in
 	unalias ls 2>/dev/null
     fi
     case "$is" in
-	bash|dash|ash)
-	    _ls ()
-	    {
-		local IFS=' '
-		command ls $LS_OPTIONS ${1+"$@"}
-	    }
-	    alias ls=_ls
-	    ;;
 	zsh)
-	    test -s /etc/profile.d/ls.zsh && . /etc/profile.d/ls.zsh
-	    ;;
-	ksh)
-	    function _ls
-	    {
-		typeset IFS=' '
-		command -p ls $LS_OPTIONS ${1+"$@"}
-	    }
-	    alias ls=_ls
-	    ;;
 	*)  alias ls='/usr/bin/ls $LS_OPTIONS' ;;
     esac
     alias dir='ls -l'
