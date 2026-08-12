@@ -76,6 +76,8 @@ Group:          System/Fhs
 Requires:       %{name} = %{version}
 Requires:       /usr/bin/find
 Requires:       cpio
+Requires:       gzip
+Requires:       tar
 Requires(post): fillup
 Provides:       aaa_base:/etc/DIR_COLORS
 
